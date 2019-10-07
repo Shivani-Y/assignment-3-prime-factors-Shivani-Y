@@ -15,5 +15,3 @@ def generate_prime_factors(number):
     print(prime_factor_list)
 
     return number
-
-generate_prime_factors(2)

@@ -65,3 +65,17 @@ def test_empty_list_on_call_6():
             i = i+1
 
     print(prime_factor_list)
+
+def test_empty_list_on_call_8():
+    """Step 7: when function called for 3"""
+    i = 2
+    prime_factor_list = []
+    prime = generate_prime_factors(8) #assigned function to a variale
+    while i <= prime:
+        if (prime%i) == 0:
+            prime_factor_list.append(i)
+            prime = prime / i
+        else:
+            i = i+1
+
+    print(prime_factor_list)

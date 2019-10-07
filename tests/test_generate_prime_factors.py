@@ -39,10 +39,24 @@ def test_empty_list_on_call_3():
     print(prime_factor_list)
 
 def test_empty_list_on_call_4():
-    """Step 4: when function called for 3"""
+    """Step 5: when function called for 3"""
     i = 2
     prime_factor_list = []
     prime = generate_prime_factors(4) #assigned function to a variale
+    while i <= prime:
+        if (prime%i) == 0:
+            prime_factor_list.append(i)
+            prime = prime / i
+        else:
+            i = i+1
+
+    print(prime_factor_list)
+
+def test_empty_list_on_call_6():
+    """Step 6: when function called for 3"""
+    i = 2
+    prime_factor_list = []
+    prime = generate_prime_factors(6) #assigned function to a variale
     while i <= prime:
         if (prime%i) == 0:
             prime_factor_list.append(i)

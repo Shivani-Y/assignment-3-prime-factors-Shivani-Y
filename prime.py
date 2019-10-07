@@ -6,12 +6,14 @@ def generate_prime_factors(number):
     prime_factor_list = []
     i = 2
     if not isinstance(number, int):
-        raise ValueError("Only integers can be used in the function")
+        ValueError("Only integers can be used in the function")
 
-    if number == 1:
-        print(prime_factor_list)
-    elif (number%i) == 0:
-        prime_factor_list.append(2)
+    while i <= number:
+        if (number%i) == 0:
+            prime_factor_list.append(i)
+            number = number / i
+        else:
+            i = i+1
     print(prime_factor_list)
 
     return number

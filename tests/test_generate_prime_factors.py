@@ -13,3 +13,8 @@ def test_data_type_not_integer():
     with pytest.raises(ValueError):#raises an error of function called for any type but integer
         if not isinstance(generate_prime_factors(2.2), int):
             raise ValueError("Function only workS for Integers")
+
+def test_empty_list_on_call_1():
+    """Step 2: if 1 called in function, then list is blank"""
+    prime_factor_list = []
+    assert generate_prime_factors(1) == prime_factor_list #checks if 1 then list empty

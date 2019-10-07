@@ -7,4 +7,7 @@ def generate_prime_factors(number):
     if not isinstance(number, int):
         raise ValueError("Only integers can be used in the function")
 
-    return prime_factor_list
+    if number == 1:
+        print(prime_factor_list)
+
+    return number

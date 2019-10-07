@@ -23,3 +23,8 @@ def test_empty_list_on_call_2():
     """Step 3: if 1 called in function, then list is blank"""
     prime_factor_list = [2]
     assert generate_prime_factors(2) == prime_factor_list #checks if 2 then list has 2 in it
+
+def test_empty_list_on_call_3():
+    """Step 4: if 1 called in function, then list is blank"""
+    prime_factor_list = [3]
+    assert generate_prime_factors(3) == prime_factor_list #checks if 3 then list has 3 in it

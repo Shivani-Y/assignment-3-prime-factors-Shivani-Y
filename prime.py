@@ -13,6 +13,13 @@ def generate_prime_factors(number):
     elif number == 2 and number%i == 0: #if number is 2 then prime factor is 2
         prime_list.append(number)
         print(prime_list)
-
+    else:
+        while i <= number:
+            if (number%i) == 0:
+                prime_list.append(i)
+                number = number / i
+            else:
+                i = i+1
+        print(prime_list)
 
     return prime_list
